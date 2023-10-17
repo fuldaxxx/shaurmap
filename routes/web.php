@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ShaurmaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PointController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get("/shaurma", [PointController::class, "index"]);
+
+Route::get("/home", [ShaurmaController::class, 'index']);
